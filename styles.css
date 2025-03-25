@@ -64,31 +64,3 @@ header {
 footer {
     text-align: center;
 }
-
-.preview-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.preview-img {
-    width: 120px;
-    height: auto;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-img {
-        width: 80px;
-        height: 80px;
-    }
-}
