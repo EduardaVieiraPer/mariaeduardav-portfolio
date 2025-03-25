@@ -11,7 +11,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Aumentado para maior espaçamento entre os cards */
+    gap: 40px;
 }
 
 .card {
@@ -20,39 +20,47 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    margin-bottom: 50px; /* Ajustado para maior espaçamento */
+    margin-bottom: 40px;
 }
 
-header {
+/* Ajustando o card do cabeçalho */
+.header-card {
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens */
+    justify-content: center;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .profile-img {
-    width: 120px;  /* Aumentado de 100px para 120px */
-    height: 120px; /* Mantido proporcional */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text {
+    text-align: center; /* Centraliza o nome e o título */
 }
 
 .header-text h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 10px 0 5px;
+    font-size: 26px;
     color: #333;
 }
 
 .title {
-    margin-top: 5px;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 18px;
     color: #666;
 }
 
-.header-text p {
-    color: #666;
-}
-
 .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-top: 10px;
 }
 
@@ -60,12 +68,26 @@ header {
     text-decoration: none;
     color: #777;
     font-size: 24px;
-    margin-right: 15px;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: #000;
+}
+
+/* Estilização dos títulos */
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555; /* Cinza escuro */
+}
+
+/* Ajustando a seção de contato */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Reduzindo espaçamento */
 }
 
 .content {
@@ -78,31 +100,13 @@ footer {
     text-align: center;
 }
 
-.preview-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.preview-img {
-    width: 100px;
-    height: auto;
-    border-radius: 8px;
-}
-
 @media (max-width: 768px) {
     .content {
         grid-template-columns: 1fr;
     }
 
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .profile-img {
-        width: 100px; /* Aumentado de 80px para 100px */
+        width: 100px;
         height: 100px;
     }
 }
-
