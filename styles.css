@@ -39,6 +39,7 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin: auto; /* Centraliza a imagem */
 }
 
 .header-text {
@@ -96,6 +97,14 @@ body {
     gap: 20px;
 }
 
+.project-img {
+    width: 80px; /* Foto pequena */
+    height: 80px; /* Foto pequena */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px; /* Espaço entre imagem e descrição */
+}
+
 footer {
     text-align: center;
 }
@@ -108,5 +117,10 @@ footer {
     .profile-img {
         width: 100px;
         height: 100px;
+    }
+
+    .project-img {
+        width: 60px; /* Foto ainda menor em telas menores */
+        height: 60px;
     }
 }
