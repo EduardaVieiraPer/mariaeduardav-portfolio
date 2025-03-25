@@ -40,6 +40,13 @@ header {
     color: #333;
 }
 
+.title {
+    margin-top: 5px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0; /* Reduz o espaço abaixo do título */
+    font-size: 18px; /* Você pode ajustar o tamanho da fonte */
+    color: #666;
+}
+
 .header-text p {
     color: #666;
 }
@@ -49,10 +56,15 @@ header {
 }
 
 .social-links a {
-    margin-right: 10px;
     text-decoration: none;
-    color: #0073b1;
-    font-weight: bold;
+    color: #777; /* Cinza */
+    font-size: 24px; /* Ajuste o tamanho dos ícones */
+    margin-right: 15px; /* Espaço entre os ícones */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #000; /* Fica preto ao passar o mouse */
 }
 
 .content {
