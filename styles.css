@@ -10,15 +10,11 @@ body {
 }
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
     background: white;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .profile-img {
@@ -53,33 +49,19 @@ body {
 }
 
 .contact {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
     max-width: 400px;
+    text-align: center;
 }
 
-.project {
+.projects {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    text-align: left;
+    gap: 15px;
 }
 
 .project-preview {
     width: 100px;
     height: auto;
     border-radius: 5px;
-}
-
-.project-description {
-    max-width: 400px;
-    text-align: left;
 }
