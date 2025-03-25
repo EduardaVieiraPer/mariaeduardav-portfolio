@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Maria Eduarda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="card">
+            <img src="https://i.postimg.cc/3R06h2HM/perfil-png.jpg" alt="Foto de perfil" class="profile-img">
+            <div class="header-text">
+                <h1>Maria Eduarda</h1>
+                <p>Analista de Dados</p>
+                <div class="social-links">
+                    <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+                    <a href="https://medium.com/@seuusuario" target="_blank">Medium</a>
+                    <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="card about">
+                <h2>Sobre Mim</h2>
+                <p>Sou estudante de Economia e Análise de Dados, com grande habilidade em tecnologia. Trabalho com protótipos de IA, testes de IA e criação de agentes.</p>
+                <h2>Projetos</h2>
+                <p>Desenvolvi dashboards interativos em Power BI, modelos preditivos em Python e automações de processos.</p>
+            </section>
+
+            <section class="card info">
+                <h2>Formação</h2>
+                <p>Graduação em Economia e Análise de Dados.</p>
+                <h2>Habilidades e Ferramentas</h2>
+                <p>Python, SQL, Power BI, R, Figma.</p>
+                <h2>Idiomas</h2>
+                <p>Português: Nativo</p>
+                <p>Inglês: Intermediário</p>
+            </section>
+        </main>
+
+        <footer class="card">
+            <h2>Contato</h2>
+            <p>Email: mariaeduarda@email.com</p>
+            <p>Telefone: (00) 12345-6789</p>
+        </footer>
+    </div>
+</body>
+</html>
