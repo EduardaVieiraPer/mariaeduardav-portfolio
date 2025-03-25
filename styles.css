@@ -30,7 +30,7 @@ header {
 
 .profile-img {
     width: 100px;
-    height: 100px;
+    height: 80px;
     border-radius: 50%;
 }
 
@@ -72,7 +72,7 @@ footer {
 }
 
 .preview-img {
-    width: 80px; /* Tamanho ajustado */
+    width: 100px; /* Tamanho ajustado */
     height: auto;
     border-radius: 8px;
 }
