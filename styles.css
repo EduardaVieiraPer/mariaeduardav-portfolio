@@ -93,10 +93,12 @@ body {
 }
 
 .project-img {
-    width: 120px; /* Reduzindo o tamanho da imagem */
+    width: 80px; /* Reduzindo o tamanho da imagem */
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+    margin-right: 20px;
+    display: block;
 }
 
 /* Ajustando a seção de contato */
