@@ -97,7 +97,7 @@ body {
 
 /* Ajustando o tamanho da imagem do projeto */
 .project-img {
-    max-width: 100%;  /* Mantém responsivo */
+    max-width: 20%;  /* Mantém responsivo */
     width: 300px;  /* Define um tamanho máximo */
     height: auto;  /* Mantém a proporção */
     display: block;
