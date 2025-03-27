@@ -28,18 +28,19 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens */
+    align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
     border-radius: 15px;
 }
 
 .profile-img {
-    width: 150px; /* Aumenta o tamanho da imagem */
+    width: 150px; /* Aumentando o tamanho */
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px; /* Ajuste para melhor espaçamento */
+    display: block;
+    margin: 0 auto; /* Centraliza corretamente */
 }
 
 .header-text {
@@ -48,13 +49,13 @@ body {
 
 .header-text h1 {
     margin: 10px 0 5px;
-    font-size: 28px;
+    font-size: 26px;
     color: #333;
 }
 
 .title {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     color: #666;
 }
 
@@ -76,32 +77,34 @@ body {
     color: #000;
 }
 
+/* Layout dos cards inferiores */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Destaca a seção principal */
+    gap: 20px;
+    align-items: start;
+}
+
+/* Ajustando a seção de projetos */
+.preview-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.project-img {
+    width: 120px; /* Reduzindo o tamanho da imagem */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 /* Ajustando a seção de contato */
 .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
-.preview-container {
-    display: flex;
-    align-items: center;
-}
-
-.project-img {
-    width: 100px; /* Reduzindo tamanho da imagem */
-    height: 100px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 15px; /* Espaço entre imagem e descrição */
 }
 
 footer {
@@ -114,12 +117,12 @@ footer {
     }
 
     .profile-img {
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
     }
 
     .project-img {
-        width: 80px;
-        height: 80px;
+        width: 100px; /* Ajuste para telas menores */
     }
 }
+
