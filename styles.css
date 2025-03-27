@@ -35,16 +35,16 @@ body {
 }
 
 .profile-img {
-    width: 150px; /* Aumentando o tamanho */
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: 0 auto; /* Centraliza corretamente */
+    margin: 0 auto;
 }
 
 .header-text {
-    text-align: center; /* Centraliza o nome e o título */
+    text-align: center;
 }
 
 .header-text h1 {
@@ -80,7 +80,7 @@ body {
 /* Layout dos cards inferiores */
 .content {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Destaca a seção principal */
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
     align-items: start;
 }
@@ -90,14 +90,19 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    max-width: 400px; /* Define um limite de largura */
+    margin: auto;
+    flex-direction: column;
 }
 
+/* Ajustando o tamanho da imagem do projeto */
 .project-img {
-    max-width: 300px;  /* Define um tamanho máximo */
-    width: 100%;  /* Ajusta para o tamanho do contêiner */
-    height: auto; /* Mantém a proporção */
+    max-width: 100%;  /* Mantém responsivo */
+    width: 300px;  /* Define um tamanho máximo */
+    height: auto;  /* Mantém a proporção */
     display: block;
-    margin: auto; /* Centraliza */
+    margin: auto;
+    border-radius: 10px; /* Borda arredondada para um visual melhor */
 }
 
 /* Ajustando a seção de contato */
@@ -110,8 +115,13 @@ body {
 
 footer {
     text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .content {
         grid-template-columns: 1fr;
@@ -123,7 +133,8 @@ footer {
     }
 
     .project-img {
-        width: 100px; /* Ajuste para telas menores */
+        width: 200px; /* Melhor equilíbrio para telas menores */
+        max-width: 90%;
     }
 }
 
