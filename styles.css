@@ -93,12 +93,11 @@ body {
 }
 
 .project-img {
-    width: 80px; /* Reduzindo o tamanho da imagem */
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 20px;
+    max-width: 300px;  /* Define um tamanho máximo */
+    width: 100%;  /* Ajusta para o tamanho do contêiner */
+    height: auto; /* Mantém a proporção */
     display: block;
+    margin: auto; /* Centraliza */
 }
 
 /* Ajustando a seção de contato */
