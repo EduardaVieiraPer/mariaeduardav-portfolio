@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -30,16 +30,16 @@ body {
     flex-direction: column;
     align-items: center; /* Centraliza os itens */
     justify-content: center;
-    padding: 30px;
+    padding: 50px;
     border-radius: 15px;
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Aumenta o tamanho da imagem */
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin: auto; /* Centraliza a imagem */
+    margin-bottom: 15px; /* Ajuste para melhor espaçamento */
 }
 
 .header-text {
@@ -48,13 +48,13 @@ body {
 
 .header-text h1 {
     margin: 10px 0 5px;
-    font-size: 26px;
+    font-size: 28px;
     color: #333;
 }
 
 .title {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
 }
 
@@ -76,33 +76,32 @@ body {
     color: #000;
 }
 
-/* Estilização dos títulos */
-.card h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #555; /* Cinza escuro */
-}
-
 /* Ajustando a seção de contato */
 .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px; /* Reduzindo espaçamento */
+    gap: 5px;
 }
 
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    align-items: center;
+}
+
+.preview-container {
+    display: flex;
+    align-items: center;
 }
 
 .project-img {
-    width: 80px; /* Foto pequena */
-    height: 80px; /* Foto pequena */
+    width: 100px; /* Reduzindo tamanho da imagem */
+    height: 100px;
     border-radius: 8px;
     object-fit: cover;
-    margin-right: 20px; /* Espaço entre imagem e descrição */
+    margin-right: 15px; /* Espaço entre imagem e descrição */
 }
 
 footer {
@@ -115,12 +114,12 @@ footer {
     }
 
     .profile-img {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
     }
 
     .project-img {
-        width: 60px; /* Foto ainda menor em telas menores */
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 }
