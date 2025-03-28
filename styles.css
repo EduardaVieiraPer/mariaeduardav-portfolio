@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 50%;  /* Ajuste para 90% da largura */
+    max-width: 70%;  /* Ajuste para 90% da largura */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
 
 /* Cabeçalho e rodapé ocupando 90% da largura */
 header.card, footer.card {
-    width: 50%;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
@@ -98,7 +98,7 @@ header.card, footer.card {
 }
 
 .preview-img {
-    width: 20px; /* Reduzindo a imagem do projeto */
+    width: 60px; /* Reduzindo a imagem do projeto */
     height: auto;
     border-radius: 10px;
 }
