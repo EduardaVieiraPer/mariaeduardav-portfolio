@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;  /* Diminuímos a largura máxima do container */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     margin-bottom: 40px;
+    max-width: 100%;  /* Garantindo que o card ocupe 100% da largura disponível */
 }
 
 /* Ajustando o card do cabeçalho */
@@ -135,5 +136,10 @@ footer {
     .project-img {
         width: 100px; /* Ajuste para telas menores */
         max-width: 90%;
+    }
+
+    .container {
+        max-width: 100%;  /* Ajuste para telas menores */
+        padding: 10px;  /* Garante que não haja espaço excessivo */
     }
 }
