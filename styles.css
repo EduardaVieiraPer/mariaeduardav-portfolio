@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -90,18 +90,18 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    max-width: 400px; /* Define um limite de largura */
+    max-width: 100%;  /* Ajuste para maior flexibilidade */
     margin: auto;
-    flex-direction: column;
+    flex-direction: row;  /* Alinha o conteúdo na horizontal */
 }
 
-/* Ajustando o tamanho da imagem do projeto */
+/* Ajustando o tamanho e o alinhamento da imagem do projeto */
 .project-img {
-    max-width: 20%;  /* Mantém responsivo */
-    width: 300px;  /* Define um tamanho máximo */
+    width: 80px;  /* Define um tamanho pequeno para a imagem */
     height: auto;  /* Mantém a proporção */
     display: block;
-    margin: auto;
+    float: left;  /* Alinha a imagem à esquerda */
+    margin-right: 15px;  /* Dá um espaço entre a imagem e a descrição */
     border-radius: 10px; /* Borda arredondada para um visual melhor */
 }
 
@@ -133,8 +133,7 @@ footer {
     }
 
     .project-img {
-        width: 200px; /* Melhor equilíbrio para telas menores */
+        width: 100px; /* Ajuste para telas menores */
         max-width: 90%;
     }
 }
-
