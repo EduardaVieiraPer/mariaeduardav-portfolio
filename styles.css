@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 100%; /* Ajustado para ocupar toda a largura */
+    max-width: 90%;  /* Ajuste para 90% da largura */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -23,15 +23,11 @@ body {
     margin-bottom: 40px;
 }
 
-/* Ajustando o card do cabeçalho */
-header.card {
-    width: 100%; /* Ocupa toda a largura */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 15px;
+/* Cabeçalho e rodapé ocupando 90% da largura */
+header.card, footer.card {
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
 .profile-img {
@@ -77,7 +73,7 @@ header.card {
     color: #000;
 }
 
-/* Layout dos cards inferiores */
+/* Ajuste dos cards centrais */
 .content {
     display: flex;
     justify-content: center;
@@ -85,15 +81,13 @@ header.card {
     flex-wrap: wrap;
 }
 
-/* Ajustando os cards centrais */
 .about, .info {
-    display: inline-block;
-    width: auto; /* Ajustado para ocupar apenas a largura do conteúdo */
-    max-width: 45%; /* Para manter um tamanho adequado */
-    margin: auto;
+    flex: 1;
+    max-width: 45%; /* Para que ambos fiquem alinhados */
+    min-width: 300px;
 }
 
-/* Ajustando a seção de projetos */
+/* Ajuste do card do projeto */
 .preview-container {
     display: flex;
     align-items: center;
@@ -103,20 +97,32 @@ header.card {
     flex-direction: row;
 }
 
-.project-img {
-    width: 80px;
+.preview-img {
+    width: 60px; /* Reduzindo a imagem do projeto */
     height: auto;
-    display: block;
-    float: left;
-    margin-right: 15px;
     border-radius: 10px;
 }
 
-/* Ajustando a seção de contato */
 footer.card {
-    width: 100%; /* Ocupa toda a largura */
     text-align: center;
-    padding: 20px;
+    margin-top: 40px;
+    padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, .info {
+        max-width: 100%;
+    }
+
+    .preview-img {
+        width: 80px;
+    }
 }
