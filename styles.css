@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 900px;  /* Diminuímos a largura máxima do container */
+    max-width: 600px;  /* Diminuímos a largura máxima do container */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     margin-bottom: 40px;
-    max-width: 100%;  /* Garantindo que o card ocupe 100% da largura disponível */
+    max-width: 50%;  /* Garantindo que o card ocupe 100% da largura disponível */
 }
 
 /* Ajustando o card do cabeçalho */
