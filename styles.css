@@ -1,4 +1,4 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 600px;  
+    max-width: 100%; /* Ajustado para ocupar toda a largura */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -21,12 +21,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     margin-bottom: 40px;
-    max-width: 100%;
 }
 
-/* Ajuste do cabeçalho */
-.header-card {
-    width: 100%;
+/* Ajustando o card do cabeçalho */
+header.card {
+    width: 100%; /* Ocupa toda a largura */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,23 +77,23 @@ body {
     color: #000;
 }
 
-/* Alinhamento dos cards */
+/* Layout dos cards inferiores */
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: start;
+    display: flex;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Ajuste do tamanho do card */
-.card {
-    max-width: 100%;
-    width: 100%;
-    text-align: left;
+/* Ajustando os cards centrais */
+.about, .info {
+    display: inline-block;
+    width: auto; /* Ajustado para ocupar apenas a largura do conteúdo */
+    max-width: 45%; /* Para manter um tamanho adequado */
+    margin: auto;
 }
 
-/* Ajuste da seção de projetos */
+/* Ajustando a seção de projetos */
 .preview-container {
     display: flex;
     align-items: center;
@@ -104,47 +103,20 @@ body {
     flex-direction: row;
 }
 
-/* Ajustando o tamanho da imagem do projeto */
-.preview-img {
-    width: 120px;  /* Pequena pré-visualização */
+.project-img {
+    width: 80px;
     height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    border-radius: 10px;
 }
 
 /* Ajustando a seção de contato */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-footer {
+footer.card {
+    width: 100%; /* Ocupa toda a largura */
     text-align: center;
-    margin-top: 40px;
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr; /* Cards em coluna única */
-    }
-
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .preview-img {
-        width: 100px; /* Redução da imagem para telas menores */
-    }
-
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
 }
