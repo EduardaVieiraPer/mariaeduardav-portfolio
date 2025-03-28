@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 600px;  /* Diminuímos a largura máxima do container */
+    max-width: 600px;  
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     margin-bottom: 40px;
-    max-width: 50%;  /* Garantindo que o card ocupe 100% da largura disponível */
+    max-width: 100%;
 }
 
-/* Ajustando o card do cabeçalho */
+/* Ajuste do cabeçalho */
 .header-card {
     width: 100%;
     display: flex;
@@ -78,32 +78,38 @@ body {
     color: #000;
 }
 
-/* Layout dos cards inferiores */
+/* Alinhamento dos cards */
 .content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: start;
+    justify-content: center;
 }
 
-/* Ajustando a seção de projetos */
+/* Ajuste do tamanho do card */
+.card {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+/* Ajuste da seção de projetos */
 .preview-container {
     display: flex;
     align-items: center;
     gap: 15px;
-    max-width: 100%;  /* Ajuste para maior flexibilidade */
+    max-width: 100%;
     margin: auto;
-    flex-direction: row;  /* Alinha o conteúdo na horizontal */
+    flex-direction: row;
 }
 
-/* Ajustando o tamanho e o alinhamento da imagem do projeto */
-.project-img {
-    width: 80px;  /* Define um tamanho pequeno para a imagem */
-    height: auto;  /* Mantém a proporção */
-    display: block;
-    float: left;  /* Alinha a imagem à esquerda */
-    margin-right: 15px;  /* Dá um espaço entre a imagem e a descrição */
-    border-radius: 10px; /* Borda arredondada para um visual melhor */
+/* Ajustando o tamanho da imagem do projeto */
+.preview-img {
+    width: 120px;  /* Pequena pré-visualização */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* Ajustando a seção de contato */
@@ -125,7 +131,7 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
     .content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Cards em coluna única */
     }
 
     .profile-img {
@@ -133,13 +139,12 @@ footer {
         height: 120px;
     }
 
-    .project-img {
-        width: 100px; /* Ajuste para telas menores */
-        max-width: 90%;
+    .preview-img {
+        width: 100px; /* Redução da imagem para telas menores */
     }
 
     .container {
-        max-width: 100%;  /* Ajuste para telas menores */
-        padding: 10px;  /* Garante que não haja espaço excessivo */
+        max-width: 100%;
+        padding: 10px;
     }
 }
