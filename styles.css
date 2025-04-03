@@ -1,47 +1,68 @@
-/* Ajustes gerais */
-body {
-    background-color: #f7f9fc;
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
     max-width: 800px;
     width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralização vertical do conteúdo */
 }
 
-/* Centralização total do conteúdo */
 .card {
-    width: 100%;
-    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Espaçamento claro entre seções */
+    width: 100%; /* Largura total centralizada */
 }
 
-/* Centralização de textos nos cabeçalhos e rodapés */
-.header-card, .footer-card {
+.header-card {
     text-align: center;
 }
 
-/* Ajustes visuais para mais semelhança ao exemplo */
 .profile-img {
     width: 160px;
     height: 160px;
-    border: 3px solid #ddd;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.header-text h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 18px;
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .social-links a {
-    font-size: 22px;
-    color: #aaa;
+    font-size: 24px;
+    color: #777;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #000;
+    color: #333;
 }
 
-/* Cards com sombras mais suaves e arredondamento */
-.card {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    border-radius: 8px;
-}
-
-/* Projetos */
 .preview-container {
     display: flex;
     flex-direction: column;
@@ -52,13 +73,25 @@ body {
 
 .preview-img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-/* Responsividade aprimorada */
+footer.card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .container {
         width: 95%;
+    }
+    
+    .card {
+        padding: 15px;
     }
 }
