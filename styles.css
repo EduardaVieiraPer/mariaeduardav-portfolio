@@ -23,7 +23,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* Cabeçalho e rodapé ocupando 70% da largura */
 header.card, footer.card {
     width: 70%;
     margin: auto;
@@ -73,7 +72,6 @@ header.card, footer.card {
     color: #000;
 }
 
-/* Ajuste dos cards centrais */
 .content {
     display: flex;
     justify-content: center;
@@ -87,32 +85,13 @@ header.card, footer.card {
     min-width: 300px;
 }
 
-/* Ajuste do card do projeto antigo (caso queira usar ainda) */
-.preview-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    max-width: 100%;
+/* Seção de Projetos */
+.projetos-wrapper {
+    max-width: 1000px;
     margin: auto;
-    flex-direction: row;
+    padding: 0 20px;
 }
 
-.preview-img {
-    width: 60px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Rodapé */
-footer.card {
-    text-align: center;
-    margin-top: 40px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Novo layout de projetos em linhas alternadas */
 .project-layout {
     display: flex;
     flex-direction: column;
@@ -127,24 +106,38 @@ footer.card {
     justify-content: center;
 }
 
-.card.full-width {
+.card-projeto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-projeto.full-width {
     width: 100%;
-    text-align: center;
-    font-weight: bold;
 }
 
-.card-row .card {
+.card-row .card-projeto {
     flex-grow: 1;
-    text-align: center;
-    font-weight: bold;
 }
 
-.card.wide {
+.card-projeto.wide {
     flex: 3;
 }
 
-.card.narrow {
+.card-projeto.narrow {
     flex: 2;
+}
+
+/* Rodapé */
+footer.card {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsividade */
@@ -158,16 +151,12 @@ footer.card {
         max-width: 100%;
     }
 
-    .preview-img {
-        width: 80px;
-    }
-
     .card-row {
         flex-direction: column;
     }
 
-    .card.full-width,
-    .card-row .card {
+    .card-projeto.full-width,
+    .card-row .card-projeto {
         width: 100%;
     }
 }
