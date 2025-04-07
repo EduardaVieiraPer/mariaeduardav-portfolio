@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 70%;  /* Ajuste para 90% da largura */
+    max-width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* Cabeçalho e rodapé ocupando 90% da largura */
+/* Cabeçalho e rodapé ocupando 70% da largura */
 header.card, footer.card {
     width: 70%;
     margin: auto;
@@ -83,11 +83,11 @@ header.card, footer.card {
 
 .about, .info {
     flex: 1;
-    max-width: 45%; /* Para que ambos fiquem alinhados */
+    max-width: 45%;
     min-width: 300px;
 }
 
-/* Ajuste do card do projeto */
+/* Ajuste do card do projeto antigo (caso queira usar ainda) */
 .preview-container {
     display: flex;
     align-items: center;
@@ -98,17 +98,53 @@ header.card, footer.card {
 }
 
 .preview-img {
-    width: 60px; /* Reduzindo a imagem do projeto */
+    width: 60px;
     height: auto;
     border-radius: 10px;
 }
 
+/* Rodapé */
 footer.card {
     text-align: center;
     margin-top: 40px;
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Novo layout de projetos em linhas alternadas */
+.project-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card.full-width {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-row .card {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card.wide {
+    flex: 3;
+}
+
+.card.narrow {
+    flex: 2;
 }
 
 /* Responsividade */
@@ -125,6 +161,13 @@ footer.card {
     .preview-img {
         width: 80px;
     }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card.full-width,
+    .card-row .card {
+        width: 100%;
+    }
 }
-
-
