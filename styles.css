@@ -1,162 +1,140 @@
-body { 
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
 }
 
-.container {
-    max-width: 70%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.topo {
+  background: #e4e4e4;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 5px solid #ccc;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    margin-bottom: 40px;
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-header.card, footer.card {
-    width: 70%;
-    margin: auto;
-    text-align: center;
+.subtitulo {
+  margin-top: -10px;
+  font-size: 18px;
+  color: #555;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+.social a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #777;
+  transition: color 0.3s;
 }
 
-.header-text {
-    text-align: center;
+.social a:hover {
+  color: #000;
 }
 
-.header-text h1 {
-    margin: 10px 0 5px;
-    font-size: 26px;
-    color: #333;
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-.title {
-    margin: 0;
-    font-size: 18px;
-    color: #666;
+.sobre .coluna {
+  flex: 1;
+  min-width: 280px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
+.sobre .direita {
+  text-align: right;
+  color: #666;
+  font-size: 14px;
 }
 
-.social-links a {
-    text-decoration: none;
-    color: #777;
-    font-size: 24px;
-    transition: color 0.3s ease;
+.principal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  gap: 30px;
 }
 
-.social-links a:hover {
-    color: #000;
+.coluna {
+  flex: 1;
+  min-width: 300px;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.projeto {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.about, .info {
-    flex: 1;
-    max-width: 45%;
-    min-width: 300px;
+.projeto img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Seção de Projetos */
-.projetos-wrapper {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
+.projeto-info {
+  text-align: left;
 }
 
-.project-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 20px;
+.projeto-info h3 {
+  margin: 0 0 5px;
 }
 
-.card-row {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+.projeto-info a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
 }
 
-.card-projeto {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-weight: bold;
-    text-align: center;
+ul {
+  padding-left: 20px;
+  text-align: left;
 }
 
-.card-projeto.full-width {
-    width: 100%;
+ul li {
+  margin-bottom: 10px;
 }
 
-.card-row .card-projeto {
-    flex-grow: 1;
-}
-
-.card-projeto.wide {
-    flex: 3;
-}
-
-.card-projeto.narrow {
-    flex: 2;
-}
-
-/* Rodapé */
-footer.card {
-    text-align: center;
-    margin-top: 40px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsividade */
+/* Responsivo */
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
+  .sobre .direita,
+  .principal {
+    flex-direction: column;
+    text-align: left;
+  }
 
-    .about, .info {
-        max-width: 100%;
-    }
+  .projeto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .card-row {
-        flex-direction: column;
-    }
+  .projeto img {
+    width: 100%;
+    height: auto;
+  }
 
-    .card-projeto.full-width,
-    .card-row .card-projeto {
-        width: 100%;
-    }
+  .projeto-info {
+    text-align: center;
+  }
 }
