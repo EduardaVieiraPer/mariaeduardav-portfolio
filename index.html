@@ -2,100 +2,69 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio - Maria Eduarda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maria Eduarda Vieira</title>
   <link rel="stylesheet" href="styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-  <div class="container">
-    <header class="card header-card">
-      <img
-        src="https://i.postimg.cc/3R06h2HM/perfil-png.jpg"
-        alt="Foto de perfil"
-        class="profile-img"
-      />
-      <div class="header-text">
-        <h1>Maria Eduarda</h1>
-        <p class="title">Analista de Dados</p>
-        <div class="social-links">
-          <a href="https://github.com/EduardaVieiraPer" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://medium.com/@mariaeduardavieiraper"
-            target="_blank"
-            ><i class="fab fa-medium"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/maria-eduarda-vieira-05a14322b"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+  <header class="topo">
+    <img src="https://i.postimg.cc/3R06h2HM/perfil-png.jpg" alt="Foto de perfil" class="foto-perfil" />
+    <h1>Maria Eduarda Vieira</h1>
+    <p class="subtitulo">Estagiária em Análise de Dados</p>
+    <div class="social">
+      <a href="https://github.com/EduardaVieiraPer" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://medium.com/@mariaeduardavieiraper" target="_blank"><i class="fab fa-medium"></i></a>
+      <a href="https://www.linkedin.com/in/maria-eduarda-vieira-05a14322b" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <section class="sobre">
+    <div class="coluna">
+      <h2>Sobre</h2>
+      <p>Sou estudante de Economia e apaixonada por análise de dados. Atuo como estagiária no Sebrae, trabalhando com painéis, relatórios e insights estratégicos. Busco conectar dados a soluções reais.</p>
+    </div>
+    <div class="coluna direita">
+      <p><i class="fas fa-map-marker-alt"></i> Recife, Brasil</p>
+      <p><i class="fas fa-envelope"></i> mariaeduardavieira@gmail.com</p>
+    </div>
+  </section>
+
+  <main class="principal">
+    <section class="coluna">
+      <h2>Portfólio</h2>
+
+      <div class="projeto">
+        <img src="https://i.postimg.cc/ncCw0jMs/Whats-App-Image-2025-03-25-at-14-44-45.jpg" alt="Projeto Análise de Clientes"/>
+        <div class="projeto-info">
+          <h3>Análise de Perfil de Clientes</h3>
+          <p>Projeto de segmentação de clientes com foco em marketing personalizado. Utilizei Power BI e análise descritiva para identificar padrões de comportamento e criar perfis estratégicos.</p>
+          <a href="https://medium.com/@mariaeduardavieiraper/an%C3%A1lise-de-perfil-de-clientes-e-sua-influ%C3%AAncia-na-personaliza%C3%A7%C3%A3o-do-marketing-479597cad4bf" target="_blank">🔗 Acesse</a>
         </div>
       </div>
-    </header>
-  </div>
 
-  <main class="content">
-    <section class="card about">
-      <h2>Sobre Mim</h2>
-      <p>
-        Sou estudante de Economia e Análise de Dados, com grande habilidade em
-        tecnologia. Trabalho com protótipos de IA, testes de IA e criação de
-        agentes.
-      </p>
+      <!-- Você pode adicionar mais projetos aqui seguindo a mesma estrutura -->
     </section>
 
-    <section class="card projetos">
-      <h2>Projetos</h2>
-      <div class="projetos-wrapper">
-        <div class="project-layout">
-          <!-- Linha 1 -->
-          <div class="card-projeto full-width">
-            Projeto 1: Dashboard de Vendas
-          </div>
-
-          <!-- Linha 2 -->
-          <div class="card-row">
-            <div class="card-projeto wide">
-              Projeto 2: Análise de Perfil de Clientes
-            </div>
-            <div class="card-projeto narrow">
-              Projeto 3: Análise de Sentimentos
-            </div>
-          </div>
-
-          <!-- Linha 3 -->
-          <div class="card-projeto full-width">
-            Projeto 4: Automação de Indicadores no Excel
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="card info">
+    <section class="coluna direita">
       <h2>Formação</h2>
-      <p>Graduação em Economia e Análise de Dados.</p>
+      <ul>
+        <li><strong>Graduação em Ciências Econômicas</strong><br>UFPE – 2021–Atual</li>
+      </ul>
+
       <h2>Habilidades e Ferramentas</h2>
-      <p><strong>Linguagens:</strong> Python, R, SQL</p>
-      <p>
-        <strong>Ferramentas:</strong> Power BI, Excel, Google Sheets, Metabase
-      </p>
-      <p><strong>Bibliotecas:</strong> Pandas, NumPy, Matplotlib, Seaborn</p>
+      <ul>
+        <li>Power BI, Excel, Metabase</li>
+        <li>Python (Pandas, Matplotlib, Seaborn)</li>
+        <li>SQL, R</li>
+      </ul>
+
       <h2>Idiomas</h2>
-      <p>Português: Nativo</p>
-      <p>Inglês: Intermediário</p>
+      <ul>
+        <li>Português: Nativo</li>
+        <li>Inglês: Intermediário</li>
+      </ul>
     </section>
   </main>
-
-  <footer class="card footer-card">
-    <h2>Contato</h2>
-    <p>Email: mariaeduarda@email.com</p>
-    <p>Telefone: (81) 98754-6151</p>
-  </footer>
 </body>
 </html>
