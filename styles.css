@@ -71,6 +71,12 @@ body {
 .coluna {
   flex: 1;
   min-width: 300px;
+  max-width: 450px;
+}
+
+/* NOVO: alinhamento da coluna direita na principal */
+.principal .direita {
+  text-align: right;
 }
 
 .projeto {
