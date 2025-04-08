@@ -57,6 +57,11 @@ body {
   text-align: right;
   color: #666;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha verticalmente */
+  height: 100%; /* Garante altura proporcional à coluna da esquerda */
+  padding-top: 10px; /* pequeno ajuste fino opcional */
 }
 
 .principal {
