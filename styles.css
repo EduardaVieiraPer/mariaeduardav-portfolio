@@ -63,7 +63,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   padding: 0 20px;
   gap: 30px;
 }
@@ -72,6 +72,16 @@ body {
   flex: 1;
   min-width: 300px;
   max-width: 450px;
+}
+
+.coluna h2 {
+  color: #444; /* cinza escuro */
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.coluna p {
+  margin: 0 0 10px;
 }
 
 .principal .direita {
@@ -83,7 +93,6 @@ body {
 
 .coluna.direita p {
   text-align: right;
-  margin-bottom: 10px;
 }
 
 .projeto {
@@ -119,31 +128,29 @@ body {
   margin-top: 5px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
+/* Botão do currículo centralizado */
+.cv-download {
+  text-align: center;
+  margin: 20px 0;
 }
 
 .botao-cv {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #1a73e8;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s;
-  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
 .botao-cv:hover {
   background-color: #155ec2;
 }
 
+/* Rodapé centralizado */
 .rodape {
   background-color: #e4e4e4;
   text-align: center;
@@ -151,7 +158,15 @@ ul li {
   font-size: 14px;
   color: #666;
   border-top: 2px solid #ccc;
-  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
 }
 
 /* Responsivo */
@@ -183,5 +198,10 @@ ul li {
 
   .coluna.direita p {
     text-align: left;
+  }
+
+  .cv-download {
+    text-align: left;
+    padding-left: 20px;
   }
 }
