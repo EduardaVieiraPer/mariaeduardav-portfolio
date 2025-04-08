@@ -119,7 +119,6 @@ body {
   margin-top: 5px;
 }
 
-/* Remove bullets e alinha centralizado */
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -127,6 +126,32 @@ ul {
 
 ul li {
   margin-bottom: 10px;
+}
+
+.botao-cv {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.botao-cv:hover {
+  background-color: #155ec2;
+}
+
+.rodape {
+  background-color: #e4e4e4;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  color: #666;
+  border-top: 2px solid #ccc;
+  margin-top: 40px;
 }
 
 /* Responsivo */
