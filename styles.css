@@ -74,9 +74,19 @@ body {
   max-width: 450px;
 }
 
-/* NOVO: alinhamento da coluna direita na principal */
 .principal .direita {
   text-align: right;
+}
+
+/* NOVO: alinha listas da coluna da direita */
+.direita ul {
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.direita ul li {
+  direction: ltr;
 }
 
 .projeto {
@@ -112,6 +122,7 @@ body {
   margin-top: 5px;
 }
 
+/* Global padrão de listas */
 ul {
   padding-left: 20px;
   text-align: left;
@@ -142,5 +153,11 @@ ul li {
 
   .projeto-info {
     text-align: center;
+  }
+
+  .direita ul {
+    text-align: left;
+    direction: ltr;
+    padding: 0 20px;
   }
 }
