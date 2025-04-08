@@ -41,6 +41,7 @@ body {
 .sobre {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start; /* NOVO: Alinha pelo topo */
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 30px auto;
@@ -75,7 +76,7 @@ body {
 }
 
 .coluna h2 {
-  color: #444; /* cinza escuro */
+  color: #444;
   margin-bottom: 5px;
   margin-top: 25px;
 }
@@ -128,7 +129,6 @@ body {
   margin-top: 5px;
 }
 
-/* Botão do currículo centralizado */
 .cv-download {
   text-align: center;
   margin: 20px 0;
@@ -137,7 +137,7 @@ body {
 .botao-cv {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #1a73e8;
+  background-color: #666;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -147,10 +147,9 @@ body {
 }
 
 .botao-cv:hover {
-  background-color: #155ec2;
+  background-color: #444;
 }
 
-/* Rodapé centralizado */
 .rodape {
   background-color: #e4e4e4;
   text-align: center;
