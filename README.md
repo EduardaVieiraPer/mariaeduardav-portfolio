@@ -1,14 +1,14 @@
 # 👋 Olá, eu sou Maria Eduarda Vieira
 
 Sou **Analista de Dados** com formação em **Ciências Econômicas**, apaixonada por transformar dados em **insights acionáveis para negócios**.  
-Atuo com **Business Intelligence, análise de mercado e pricing**, desde o tratamento e modelagem dos dados até a comunicação dos resultados por meio de **dashboards e relatórios estratégicos**.
+Atuo com **Business Intelligence, análise de mercado, pricing e Data Science**, desde o tratamento e modelagem dos dados até a comunicação dos resultados por meio de **dashboards e relatórios estratégicos**.
 
 ---
 
 ## 🔎 Sobre mim
 
 - 🎓 Estudante de **Ciências Econômicas** na UFPE  
-- 📊 Atuação e interesse em **Análise de Dados, Business Intelligence e Economia Aplicada**  
+- 📊 **Atuação e interesse em Data Science, Análise de Dados e Inteligência Artificial aplicada a negócios**, com foco em **NLP, modelagem analítica e suporte à tomada de decisão**  
 - 💡 Foco em resolver problemas reais de negócio por meio de dados  
 - 🚀 Perfil proativo, analítico e em constante aprendizado  
 
@@ -25,19 +25,29 @@ Atuo com **Business Intelligence, análise de mercado e pricing**, desde o trata
 - Power BI  
 - Excel  
 - Google Sheets  
+- Metabase  
 
 ### Bibliotecas
 - Pandas  
 - NumPy  
 - Matplotlib  
 - Seaborn  
+- Requests  
+- Selenium  
+- Scikit-learn  
+- NLTK  
+- Sentence-Transformers  
 
 ### Metodologias e Conceitos
-- Análise Exploratória de Dados (EDA)  
-- ETL (Extração, Tratamento e Carga de Dados)  
-- Modelagem Estatística  
-- Indicadores de Performance (KPIs)  
-- Análise de Mercado e Pricing  
+- Análise Exploratória de Dados (EDA)
+- ETL e Data Pipelines (Python, SQL, Excel)
+- Feature Engineering
+- Modelagem Estatística e Preditiva
+- Processamento de Linguagem Natural (NLP)
+  TF-IDF
+  Similaridade semântica
+- Validação e avaliação de modelos
+- Indicadores de Performance (KPIs)
 
 ---
 
@@ -56,7 +66,19 @@ Atuo com **Business Intelligence, análise de mercado e pricing**, desde o trata
 
 ---
 
-✨ Aqui você encontrará projetos voltados para **análise de dados, BI, estudos econômicos e soluções orientadas a dados**, sempre com foco em clareza, impacto e aplicabilidade prática.
+### 📌 Estagiária de Análise de Dados — **SEBRAE/PE**
+
+- Coleta, organização e tratamento de dados para **apoio à tomada de decisão**.  
+- Construção de processos de **ETL** para bases de dados internas e estudos de mercado.  
+- Realização de **análises exploratórias** e consolidação de informações estratégicas.  
+- Elaboração de **relatórios e boletins de inteligência de mercado**.  
+- Criação de **dashboards em Power BI** para suporte a decisões gerenciais.  
+- Consultas em bancos de dados utilizando **SQL**.  
+- Apoio a iniciativas de **uso e treinamento de IA aplicada a negócios**.
+
+---
+
+✨ Aqui você encontrará projetos voltados para **Data Science, NLP, BI, estudos econômicos e soluções orientadas a dados**, sempre com foco em clareza, impacto e aplicabilidade prática.
 
 
 ## 📫 Como me encontrar
