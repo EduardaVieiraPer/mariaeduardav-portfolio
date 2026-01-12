@@ -41,7 +41,7 @@ body {
 .sobre {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* NOVO: Alinha pelo topo */
+  align-items: flex-start; /* Alinha pelo topo */
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 30px auto;
@@ -86,8 +86,17 @@ body {
   margin-top: 25px;
 }
 
+/* ✅ ALTERADO: texto justificado + hifenização no desktop */
 .coluna p {
   margin: 0 0 10px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ✅ ADICIONADO: garante que os parágrafos dos projetos também fiquem justificados */
+.projeto-info p {
+  text-align: justify;
+  hyphens: auto;
 }
 
 .principal .direita {
@@ -207,5 +216,12 @@ ul li {
   .cv-download {
     text-align: left;
     padding-left: 20px;
+  }
+
+  /* ✅ ADICIONADO: no mobile, texto volta a ficar alinhado à esquerda */
+  .coluna p,
+  .projeto-info p {
+    text-align: left;
+    hyphens: manual;
   }
 }
